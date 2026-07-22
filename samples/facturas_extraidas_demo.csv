@@ -1,0 +1,4 @@
+archivo,numero,fecha,proveedor,cliente,subtotal,iva,total,estado
+FAC-001.pdf,FAC-001,2026-07-20,Servicios Demo S.A.,Cliente Demo 1,100.00,15.00,115.00,Pagada
+FAC-002.pdf,FAC-002,2026-07-20,Tecnologia Interna Demo,Cliente Demo 2,250.00,37.50,287.50,Pendiente
+FAC-003.pdf,FAC-003,2026-07-21,Automatizaciones Demo,Cliente Demo 3,80.00,12.00,92.00,Pagada

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Portal de Facturas Demo</title>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    }
+
+    header {
+    background: #0f172a;
+    color: white;
+    padding: 28px 40px;
+    }
+
+    header h1 {
+    margin: 0;
+    font-size: 28px;
+    }
+
+    header p {
+    margin: 8px 0 0;
+    color: #cbd5e1;
+    }
+
+    main {
+    padding: 32px 40px;
+    }
+
+    .panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+    }
+
+    .summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+    }
+
+    .card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 18px;
+    background: #f8fafc;
+    }
+
+    .card span {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    }
+
+    .card strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 26px;
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    }
+
+    th, td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+    }
+
+    th {
+    background: #f8fafc;
+    color: #475569;
+    font-size: 12px;
+    text-transform: uppercase;
+    }
+
+    .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 12px;
+    }
+
+    .pagada {
+    background: #dcfce7;
+    color: #166534;
+    }
+
+    .pendiente {
+    background: #fef3c7;
+    color: #92400e;
+    }
+
+    a.download {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    }
+
+    a.download:hover {
+    background: #1d4ed8;
+    }
+
+    @media (max-width: 800px) {
+    main {
+        padding: 20px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 12px;
+    }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Portal de Facturas Demo</h1>
+    <p>Consulta y descarga de facturas PDF para automatización de portafolio</p>
+</header>
+
+<main>
+    <section class="panel">
+    <div class="summary">
+        <div class="card">
+        <span>Total facturas</span>
+        <strong>3</strong>
+        </div>
+
+        <div class="card">
+        <span>Pagadas</span>
+        <strong>2</strong>
+        </div>
+
+        <div class="card">
+        <span>Pendientes</span>
+        <strong>1</strong>
+        </div>
+    </div>
+
+    <table id="tablaFacturas">
+        <thead>
+        <tr>
+            <th>Número</th>
+            <th>Fecha</th>
+            <th>Proveedor</th>
+            <th>Cliente</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th>Documento</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-factura="FAC-001">
+            <td>FAC-001</td>
+            <td>2026-07-20</td>
+            <td>Servicios Demo S.A.</td>
+            <td>Cliente Demo 1</td>
+            <td>115.00</td>
+            <td><span class="badge pagada">Pagada</span></td>
+            <td>
+            <a class="download" href="invoices/FAC-001.pdf" download>Descargar PDF</a>
+            </td>
+        </tr>
+
+        <tr data-factura="FAC-002">
+            <td>FAC-002</td>
+            <td>2026-07-20</td>
+            <td>Tecnologia Interna Demo</td>
+            <td>Cliente Demo 2</td>
+            <td>287.50</td>
+            <td><span class="badge pendiente">Pendiente</span></td>
+            <td>
+            <a class="download" href="invoices/FAC-002.pdf" download>Descargar PDF</a>
+            </td>
+        </tr>
+
+        <tr data-factura="FAC-003">
+            <td>FAC-003</td>
+            <td>2026-07-21</td>
+            <td>Automatizaciones Demo</td>
+            <td>Cliente Demo 3</td>
+            <td>92.00</td>
+            <td><span class="badge pagada">Pagada</span></td>
+            <td>
+            <a class="download" href="invoices/FAC-003.pdf" download>Descargar PDF</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </section>
+</main>
+</body>
+</html>

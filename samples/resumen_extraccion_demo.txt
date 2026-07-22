@@ -1,0 +1,9 @@
+RESUMEN DE EXTRACCIÓN DE FACTURAS
+---------------------------------
+Carpeta analizada: C:\Users\User\Documents\Desarrollos\Demos\demo_facturas_pdf\downloads\2026-07-21_20-55-47
+Facturas procesadas: 3
+Facturas pagadas: 2
+Facturas pendientes: 1
+Errores: 0
+Total general: 494.50
+Archivo CSV generado: C:\Users\User\Documents\Desarrollos\Demos\demo_facturas_pdf\data\facturas_extraidas.csv

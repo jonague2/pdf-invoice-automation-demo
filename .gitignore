@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Runtime outputs
+downloads/
+logs/
+data/facturas_extraidas.csv
+reports/resumen_extraccion.txt
+
+# Local/editor files
+.env
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
