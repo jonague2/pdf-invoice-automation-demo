@@ -1,5 +1,7 @@
 # Automatización de Facturas PDF desde Portal Web
 
+![Automatización de Facturas PDF](assets/social-preview.png)
+
 Demo de portafolio desarrollado en Python para simular un flujo de automatización donde se descargan facturas PDF desde un portal web, se leen los documentos y se extraen los datos principales hacia un archivo CSV.
 
 El proyecto está orientado a casos reales de automatización administrativa, soporte de aplicaciones, procesamiento documental y extracción estructurada de información.
@@ -78,6 +80,10 @@ python -m playwright install chromium
 ```
 
 ## Uso
+
+Vista del portal demo:
+
+![Portal de facturas demo](assets/portal_facturas.png)
 
 Primero levantar el portal local:
 
